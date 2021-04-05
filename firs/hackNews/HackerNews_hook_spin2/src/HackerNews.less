@@ -1,0 +1,132 @@
+/*取消浏览器默认格式 */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7f7f7;
+}
+/* 设置页面 */
+#Outer {
+  width: 1000px;
+  margin: 0 auto;
+
+  /* Header组件 */
+  .headline {
+    width: 100%;
+    height: 50px;
+
+    /* 输入文本框 */
+    .input1 {
+      height: 25px;
+      /* 浮动 */
+      float: right;
+      /* 外边距 */
+      margin: 10px 5px 0 0;
+    }
+
+    /* 设置标题 */
+    h2 a {
+      /* 浮动 */
+      float: left;
+      /* 字体 */
+      font-size: 20px;
+      color: black;
+      /*去掉下划线*/
+      text-decoration: none;
+      /* 外边距 */
+      margin: 10px 0 0 20px;
+    }
+
+    .refreshBtn {
+      /* 大小 */
+      height: 25px;
+      /* 浮动 */
+      float: right;
+      /* 外边距 */
+      margin: 13px 10px 0 0;
+    }
+  }
+
+  /* 
+    设置内容区
+  */
+
+  /* loading */
+  .loadSpan {
+    /* 大小 */
+    width: 250px;
+    height: 50px;
+    //background-color: rgb(29, 206, 206);
+    text-align: center;
+    /* 定位 */
+    position: fixed;
+    top: 5px;
+    left: 640px;
+  }
+  /* 设置整个条目块 */
+
+  .content {
+    /* 大小 */
+    height: 100px;
+    width: 490px;
+    /*背景  */
+    background-color: rgb(231, 231, 231);
+    /* 外边距 */
+    margin-top: 5px;
+    /* 浮动 */
+    float: left;
+    /* 设置左右边距 */
+    margin: 5px;
+
+    .liItem {
+      list-style: none;
+      /* 条目块上方div中的超链接a */
+      .topPart_a {
+        /* 设置大小 */
+        width: 450px;
+        height: 50px;
+        /*去掉下划线*/
+        text-decoration: none;
+        /* 颜色 */
+        color: black;
+        /* 外边距 */
+        margin: 15px auto 0;
+        /* 设置成块元素 */
+        display: block;
+        // 设置伪类
+        &:hover {
+          color: rgb(79, 114, 145);
+        }
+      }
+
+      /* 条目块下方div */
+      .bottomPart {
+        /* 设置大小 */
+        width: 450px;
+        height: 20px;
+        /* 外边距 */
+        margin: 0 auto;
+
+        /* 域名 */
+        .urlSpan {
+          font: 5px darkgrey georgia;
+        }
+
+        /* 评论超链接 */
+        .bottom_a {
+          /* 块元素 */
+          display: block;
+          /*大小和位置  */
+          font: 5px/20px darkgrey georgia;
+          margin: 3px 5px 0 0;
+          /* 浮动 */
+          float: right;
+          /*去掉下划线*/
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
